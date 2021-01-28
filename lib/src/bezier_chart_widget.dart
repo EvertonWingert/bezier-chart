@@ -1268,12 +1268,12 @@ class _BezierChartPainter extends CustomPainter {
         for (_CustomValue customValue in _currentCustomValues.reversed.toList()) {
           textValues.add(
             TextSpan(
-              text: customValue.value == '0' ? "0,00" : "${config.bubbleIndicatorValueFormat.format(double.parse(customValue.value))} ",
-              style: config.bubbleIndicatorValueStyle.copyWith(fontSize: 12),
+              text: " ${customValue.label}\n",
+              style: config.bubbleIndicatorLabelStyle.copyWith(fontSize: 12),
               children: [
                 TextSpan(
-                  text: "${customValue.label}\n",
-                  style: config.bubbleIndicatorLabelStyle.copyWith(fontSize: 12),
+                  text: customValue.value == '0' ? "0,00" : "${config.bubbleIndicatorValueFormat.format(double.parse(customValue.value))} ",
+                  style: config.bubbleIndicatorValueStyle.copyWith(fontSize: 12),
                 ),
               ],
             ),
