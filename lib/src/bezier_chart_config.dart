@@ -133,22 +133,21 @@ class BezierChartConfig {
       this.bubbleIndicatorLabelStyle = const TextStyle(
         color: Colors.grey,
         fontWeight: FontWeight.w700,
-        fontSize: 9,
+        fontSize: 12,
       ),
       this.bubbleIndicatorTitleStyle = const TextStyle(
         color: Colors.grey,
         fontWeight: FontWeight.w600,
-        fontSize: 9.5,
+        fontSize: 12,
       ),
       this.bubbleIndicatorValueStyle = const TextStyle(
-        color: Colors.black,
-        fontWeight: FontWeight.bold,
-        fontSize: 11,
+        color: Colors.grey,
+        fontWeight: FontWeight.w600,
+        fontSize: 12,
       ),
       this.bubbleIndicatorValueFormat,
       this.physics = const AlwaysScrollableScrollPhysics(),
       this.updatePositionOnTap = false,
       bool verticalLineFullHeight})
-      : this.verticalLineFullHeight =
-            verticalLineFullHeight ?? verticalIndicatorFixedPosition;
+      : this.verticalLineFullHeight = verticalLineFullHeight ?? verticalIndicatorFixedPosition;
 }
