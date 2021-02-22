@@ -1382,13 +1382,13 @@ class _BezierChartPainter extends CustomPainter {
             in _currentCustomValues.reversed.toList()) {
           textValues.add(
             TextSpan(
-              text: "${customValue.label}",
+              text: "${customValue.label}\n",
               style: config.bubbleIndicatorLabelStyle.copyWith(fontSize: 12),
               children: [
                 TextSpan(
                   text: customValue.value == '0'
                       ? "0,00"
-                      : "${config.bubbleIndicatorValueFormat.format(double.parse(customValue.value))}\n",
+                      : "${config.bubbleIndicatorValueFormat.format(double.parse(customValue.value))}\n\n",
                   style:
                       config.bubbleIndicatorValueStyle.copyWith(fontSize: 12),
                 ),
