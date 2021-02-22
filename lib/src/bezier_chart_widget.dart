@@ -1388,7 +1388,7 @@ class _BezierChartPainter extends CustomPainter {
                 TextSpan(
                   text: customValue.value == '0'
                       ? "0,00"
-                      : "${config.bubbleIndicatorValueFormat.format(double.parse(customValue.value))}\n\n",
+                      : "${config.bubbleIndicatorValueFormat.format(double.parse(customValue.value))}\n",
                   style:
                       config.bubbleIndicatorValueStyle.copyWith(fontSize: 12),
                 ),
